@@ -26,11 +26,15 @@ this.red = true
 this.strong = false
 
 <p class={
-  {
-    [style.sample]: true,
-    [style.red]: this.red,
-    [style.strong]: this.strong
-  }
+  [
+    // unconditional styles
+    style.sample,
+    // conditional styles with enable booleans
+    {
+      [style.red]: this.red,
+      [style.strong]: this.strong
+    }
+  ]
 }>
   Your content goes here
 </p>

@@ -17,11 +17,15 @@ const Component = {
         </p>
         <hr />
         <p class={
-          {
-            [style.sample]: true,
-            [style.red]: this.red,
-            [style.strong]: this.strong
-          }
+          [
+            // unconditional styles
+            style.sample,
+            // conditional styles with enable booleans
+            {
+              [style.red]: this.red,
+              [style.strong]: this.strong
+            }
+          ]
         }>
           This content is styled conditionally, but always has the <code>sample</code> class enabled
         </p>
