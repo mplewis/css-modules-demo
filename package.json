@@ -1,0 +1,14 @@
+{
+  "name": "css-modules-demo",
+  "version": "0.0.0",
+  "main": "index.jsx",
+  "license": "MIT",
+  "scripts": {
+    "dev": "poi"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "poi": "^9.1.4",
+    "sass-loader": "^6.0.6"
+  }
+}
